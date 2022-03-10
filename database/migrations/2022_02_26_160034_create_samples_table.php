@@ -14,9 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('samples', function (Blueprint $table) {
-            $table->id();
             $table->string('UHID');
             $table->timestamps();
+            $table->string('DATE');
+            $table->string('TIME');
             $table->string('NAME');
             $table->string('GAURDIAN_NAME');
             $table->string('DOB');
@@ -37,7 +38,7 @@ return new class extends Migration
             $table->string('BP');
             $table->string('PULSE');
             $table->string('TEMP');
-            $table->string('SPO2');
+            $table->string('SUGAR');
             $table->string('CHEIF_COMPLAINTS');
             $table->string('DEPARTMENT');
             $table->string('HOSPITAL');

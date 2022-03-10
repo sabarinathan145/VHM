@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class sample extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'UHID';
+    public $incrementing = true;
+    protected $keyType = 'string';
 }
